@@ -69,7 +69,7 @@ section {
 }
 
 .card:hover{
-    background-color: orange;
+    background-color: greenyellow;
     transform: scale(1.15);
     transition: transform 1s ease-in-out;
 }
