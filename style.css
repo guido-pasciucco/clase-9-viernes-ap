@@ -1,0 +1,76 @@
+* {margin: 0px;}
+
+.navbar {
+    background-color: aqua;
+    /* flexbox */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* grids */
+    grid-column: 1 / 4;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    z-index: 2;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 30px 0px;
+}
+
+
+footer {
+    background-color: gray;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header {
+    background-image: url("https://multimedia.andalucia.org/media/60DBA931A7E0442C961B1EC45AB4EC30/img/322BD52AE4D54D849FBBD6387C91D594/19-18_Playa_de_Monsul_Almeria.jpg?responsive");
+    background-size:cover;
+    color: orangered;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.contenedor_grid {
+    margin-top: 75px;
+    display: grid; 
+    grid-template-columns: 25% 50% 25%; 
+    grid-template-rows:  200px 1fr 1fr 100px; 
+    
+}
+
+section {
+    grid-column: 2/3; /* lugar que ocupa en el grid "padre" */
+    display: grid; /* a su vez, el section también es un grid para las cards */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    transition: transform 1s ease-in-out;
+}
+
+.card:hover{
+    background-color: orange;
+    transform: scale(1.15);
+    transition: transform 1s ease-in-out;
+}
+
